@@ -1,0 +1,1634 @@
+@charset "utf-8";
+
+/* 공통요소 */
+
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 42px;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* header */
+
+header .inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+
+header .logo h1 {
+  display: inline-block;
+  width: 230px;
+  height: 120px;
+  margin-top: 20px;
+  background: url(../img/header/logo.png) no-repeat center/contain;
+}
+
+header .logo h1 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+header .tnb {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.mobile_tnb {
+  display: none;
+}
+header span:hover {
+  color: #000;
+}
+
+header .tnb span {
+  display: inline-block;
+  margin-left: 20px;
+  font-weight: light;
+}
+
+.notice-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 58px;
+  left: 0px;
+}
+
+.notice {
+  width: 200px;
+  height: 50px;
+  overflow: hidden;
+}
+
+.rolling {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.rolling li {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-weight: 500;
+  text-align: left;
+}
+
+.rolling .call span {
+  font-size: 18px;
+  font-weight: 600;
+  display: block;
+  margin-top: 10px;
+}
+
+.rolling .call img {
+  position: absolute;
+  bottom: 30px;
+  right: 35px;
+  width: 20px;
+  height: 20px;
+}
+/* gnb_area */
+
+.mobile_gnb {
+  display: none;
+}
+
+.gnb_area {
+  position: relative;
+}
+
+.gnb_area .gnb {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gnb_area .gnb li {
+  width: 120px;
+}
+.gnb_area .gnb > li:hover a {
+  color: #028c6a;
+  font-weight: 600;
+}
+.gnb_area .gnb li a {
+  display: block;
+  height: 30px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 18px;
+  color: #000;
+  padding: 15px 0;
+}
+.search_area {
+  position: absolute;
+  top: 64px;
+  right: 0;
+}
+
+form {
+  width: 240px;
+  height: 40px;
+}
+
+form input {
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+form button {
+  border: none;
+  background: transparent;
+}
+button img {
+  position: relative;
+  top: -33px;
+  left: 95px;
+}
+
+/* gnb_sub */
+.gnb_sub {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  background: #fff;
+  width: 100vw;
+  padding: 25px 0;
+  box-sizing: border-box;
+  position: absolute;
+  opacity: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: none;
+}
+.gnb_sub .inner {
+  display: flex;
+  justify-content: space-between;
+}
+.gnb_sub .inner > ul > li {
+  width: 120px;
+  text-align: center;
+}
+.gnb_sub .inner > ul > li > a {
+  font-weight: 500;
+  line-height: 2;
+  font-size: 16px;
+}
+.gnb_sub .inner > ul > li:hover > a {
+  color: #028c6a;
+  font-weight: 500;
+}
+
+/* main 슬라이드 */
+.sub1_main_swiper {
+  width: 100vw;
+  height: 600px;
+  position: relative;
+}
+
+.sub1_main_swiper .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.sub1_main_swiper .swiper-slide {
+  width: 100%;
+  height: 600px;
+  background: no-repeat center/cover;
+}
+
+.sub1_main_swiper .swiper-slide .inner {
+  height: 100%;
+  position: relative;
+}
+
+.sub1_main_swiper .swiper-slide .text_area {
+  position: absolute;
+  top: 40%;
+  left: 0;
+}
+
+.sub1_main_swiper .swiper-slide .text_area p {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.sub1_main_swiper .swiper-slide .text_area strong {
+  font-size: 50px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.sub1_main_swiper .swiper-slide.sub1_swiper01 {
+  background-image: url(../img/sub1_img/sub1_top01.png);
+}
+
+.sub1_main_swiper .swiper-slide.sub1_swiper02 {
+  background-image: url(../img/sub1_img/sub1_top02.png);
+}
+
+.sub1_main_swiper .swiper-slide.sub1_swiper03 {
+  background-image: url(../img/sub1_img/sub1_top03.png);
+}
+
+.sub1_main_swiper .swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.sub1_main_swiper .swiper-button-next {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translate(-50%, -50%);
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.sub1_main_swiper .swiper-pagination {
+  bottom: 0px;
+}
+
+/* benefit */
+#benefit {
+  height: 435px;
+  background: #eaeaea repeat-x;
+}
+
+.benefit_area {
+  min-width: 1200px;
+}
+
+.benefit_title {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.benefit_title > li {
+  padding: 50px 0;
+  box-sizing: border-box;
+}
+
+.benefit_title > li.on > a {
+  color: #028c6a;
+  font-weight: 500;
+}
+
+.benefit_title > li > a {
+  text-align: center;
+  font-size: 24px;
+  color: #444036;
+  font-weight: 500;
+}
+
+.benefit_list {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  display: none;
+}
+
+.benefit_list01.on {
+  display: flex;
+}
+
+.benefit_list02.on {
+  display: flex;
+}
+
+.benefit_item {
+  text-align: center;
+  width: 260px;
+  height: 260px;
+  background: #fff;
+  border: none;
+  border-radius: 15px;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.benefit_item figure {
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.benefit_item p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.benefit_item > li:nth-child(3),
+.benefit_item > li:nth-child(4) {
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 2px;
+  letter-spacing: -1px;
+  margin-left: 20px;
+  text-align-last: left;
+}
+
+.benefit_item > li:nth-child(3):before {
+  position: absolute;
+  top: 64.5%;
+  left: 8%;
+  content: "";
+  width: 14px;
+  height: 14px;
+
+  background: url(../img/sub1_img/triangle.png) no-repeat center/contain;
+  transform: rotate(270deg);
+}
+
+.benefit_item > li:nth-child(4):before {
+  position: absolute;
+  top: 73%;
+  left: 8%;
+  content: "";
+  width: 14px;
+  height: 14px;
+
+  background: url(../img/sub1_img/triangle.png) no-repeat center/contain;
+  transform: rotate(270deg);
+}
+
+.benefit_item > li:last-child {
+  position: absolute;
+  bottom: 4%;
+  right: 4%;
+  content: "";
+  width: 25px;
+  height: 25px;
+  background: url(../img/sub1_img/bt_circle.png) no-repeat center/contain;
+}
+
+.benefit_item > li > .benefit_img01 {
+  background: url(../img/sub1_img/icon_sale.png) no-repeat center/contain;
+}
+
+.benefit_item > li > .benefit_img02 {
+  background: url(../img/sub1_img/icon_card.png) no-repeat center/contain;
+}
+
+.benefit_item > li > .benefit_img03 {
+  background: url(../img/sub1_img/icon_hotdeal.png) no-repeat center/contain;
+}
+
+.benefit_item > li > .benefit_img04 {
+  background: url(../img/sub1_img/icon_coupon.png) no-repeat center/contain;
+}
+
+/* benefit 종료 */
+#brand {
+  max-width: 1200px;
+  height: 1100px;
+  padding-top: 50px;
+  text-align: center;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.brand_subject {
+  height: 80px;
+  text-align: center;
+}
+
+.brand_subject p {
+  font-size: 42px;
+  font-weight: 700;
+  color: #000;
+}
+
+.brand_container {
+  height: 750px;
+  position: relative;
+}
+
+.brand_container > nav > ul > li.on > a {
+  color: #028c6a;
+  font-weight: 600;
+}
+
+.brand_container .brand_cont {
+  height: 100%;
+  overflow: hidden;
+  display: none;
+}
+
+.brand_container .left_area {
+  float: left;
+  width: 450px;
+}
+
+.brand_container .right_area {
+  float: right;
+  width: 60%;
+}
+
+/* nav */
+.brand_container nav {
+  width: 700px;
+  margin-bottom: 30px;
+  font-weight: normal;
+  color: #000;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.brand_container nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.brand_container nav ul > li > a {
+  font-size: 18px;
+  color: #000;
+}
+
+.focus_item {
+  width: 450px;
+  height: 750px;
+  background: #d7b259;
+  border: none;
+  border-radius: 18px;
+
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+}
+
+.focus_item > li:nth-child(1) {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 수정 */
+}
+
+.focus_item > li:nth-child(2) {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  font-size: 45px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.85);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.focus_item li:nth-child(2) > span {
+  font-size: 54px;
+  color: #fff;
+}
+
+.focus_item li:nth-child(3) {
+  position: absolute;
+  bottom: 13%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  font-weight: 400;
+  color: #fff;
+  opacity: 0.7;
+}
+
+.focus_item > li > figure {
+  display: block;
+  width: 280px;
+  height: 280px;
+}
+
+.brand_cont_01 .focus_item > li > .focus_img01 {
+  background: url(../img/sub1_img/camera_01.png) no-repeat center/contain;
+}
+
+.brand_cont_02 .focus_item > li > .focus_img01 {
+  background: url(../img/sub1_img/watch_01.png) no-repeat center/contain;
+}
+
+.brand_cont_03 .focus_item > li > .focus_img01 {
+  background: url(../img/sub1_img/earphone_01.png) no-repeat center/contain;
+}
+
+.brand_cont_04 .focus_item > li > .focus_img01 {
+  background: url(../img/sub1_img/headset_01.png) no-repeat center/contain;
+}
+
+.brand_cont_05 .focus_item > li > .focus_img01 {
+  background: url(../img/sub1_img/monitor_01.png) no-repeat center/contain;
+}
+
+.brand_cont_06 .focus_item > li > .focus_img01 {
+  background: url(../img/sub1_img/laptop_01.png) no-repeat center/contain;
+}
+
+.brand_cont_07 .focus_item > li > .focus_img01 {
+  background: url(../img/sub1_img/phone_01.png) no-repeat center/contain;
+}
+
+.brand_cont_08 .focus_item > li > .focus_img01 {
+  background: url(../img/sub1_img/tablet_01.png) no-repeat center/contain;
+}
+
+.brand_cont_09 .focus_item > li > .focus_img01 {
+  background: url(../img/sub1_img/etc_01.png) no-repeat center/contain;
+}
+
+.brand_cont_01.on {
+  display: block;
+}
+
+.brand_cont_02.on {
+  display: block;
+}
+
+.brand_cont_03.on {
+  display: block;
+}
+
+.brand_cont_04.on {
+  display: block;
+}
+
+.brand_cont_05.on {
+  display: block;
+}
+
+.brand_cont_06.on {
+  display: block;
+}
+
+.brand_cont_07.on {
+  display: block;
+}
+
+.brand_cont_08.on {
+  display: block;
+}
+
+.brand_cont_09.on {
+  display: block;
+}
+
+/* itembox */
+.itembox_area {
+  margin-top: 50px;
+  float: right;
+}
+
+.itembox_area > ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 700px;
+}
+.itembox_area > ul > li {
+  margin-bottom: 40px;
+}
+.itembox {
+  width: 200px;
+  height: 230px;
+  background: #f0f0f0;
+  border-radius: 15px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.itembox_green {
+  width: 200px;
+  height: 230px;
+  background: #60be96;
+  border-radius: 15px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.itembox_blue {
+  background: #77b0c5;
+  width: 200px;
+  height: 230px;
+  border-radius: 15px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.itembox figure,
+.itembox_green figure,
+.itembox_blue figure {
+  position: relative;
+  left: 0;
+  width: 140px;
+  height: 120px;
+  background: no-repeat center/contain;
+}
+
+.brand_cont_01 .itembox .itembox_img02 {
+  background-image: url(../img/sub1_img/camera_02.png);
+}
+
+.brand_cont_01 .itembox_green .itembox_img03 {
+  background-image: url(../img/sub1_img/camera_03.png);
+}
+
+.brand_cont_01 .itembox .itembox_img04 {
+  background-image: url(../img/sub1_img/camera_04.png);
+}
+
+.brand_cont_01 .itembox_blue .itembox_img05 {
+  background-image: url(../img/sub1_img/camera_05.png);
+}
+
+.brand_cont_01 .itembox .itembox_img06 {
+  background-image: url(../img/sub1_img/camera_06.png);
+}
+
+.brand_cont_01 .itembox .itembox_img07 {
+  background-image: url(../img/sub1_img/camera_07.png);
+}
+
+.brand_cont_02 .itembox .itembox_img02 {
+  background-image: url(../img/sub1_img/watch_02.png);
+}
+
+.brand_cont_02 .itembox_green .itembox_img03 {
+  background-image: url(../img/sub1_img/watch_03.png);
+}
+
+.brand_cont_02 .itembox .itembox_img04 {
+  background-image: url(../img/sub1_img/watch_04.png);
+}
+
+.brand_cont_02 .itembox_blue .itembox_img05 {
+  background-image: url(../img/sub1_img/watch_05.png);
+}
+
+.brand_cont_02 .itembox .itembox_img06 {
+  background-image: url(../img/sub1_img/watch_06.png);
+}
+
+.brand_cont_02 .itembox .itembox_img07 {
+  background-image: url(../img/sub1_img/watch_07.png);
+}
+
+.brand_cont_03 .itembox .itembox_img02 {
+  background-image: url(../img/sub1_img/earphone_02.png);
+}
+
+.brand_cont_03 .itembox_green .itembox_img03 {
+  background-image: url(../img/sub1_img/earphone_03.png);
+}
+
+.brand_cont_03 .itembox .itembox_img04 {
+  background-image: url(../img/sub1_img/earphone_04.png);
+}
+
+.brand_cont_03 .itembox_blue .itembox_img05 {
+  background-image: url(../img/sub1_img/earphone_05.png);
+}
+
+.brand_cont_03 .itembox .itembox_img06 {
+  background-image: url(../img/sub1_img/earphone_06.png);
+}
+
+.brand_cont_03 .itembox .itembox_img07 {
+  background-image: url(../img/sub1_img/earphone_07.png);
+}
+
+.brand_cont_04 .itembox .itembox_img02 {
+  background-image: url(../img/sub1_img/headset_02.png);
+}
+
+.brand_cont_04 .itembox_green .itembox_img03 {
+  background-image: url(../img/sub1_img/headset_03.png);
+}
+
+.brand_cont_04 .itembox .itembox_img04 {
+  background-image: url(../img/sub1_img/headset_04.png);
+}
+
+.brand_cont_04 .itembox_blue .itembox_img05 {
+  background-image: url(../img/sub1_img/headset_05.png);
+}
+
+.brand_cont_04 .itembox .itembox_img06 {
+  background-image: url(../img/sub1_img/headset_06.png);
+}
+
+.brand_cont_04 .itembox .itembox_img07 {
+  background-image: url(../img/sub1_img/headset_07.png);
+}
+
+.brand_cont_05 .itembox .itembox_img02 {
+  background-image: url(../img/sub1_img/monitor_02.png);
+}
+
+.brand_cont_05 .itembox_green .itembox_img03 {
+  background-image: url(../img/sub1_img/monitor_03.png);
+}
+
+.brand_cont_05 .itembox .itembox_img04 {
+  background-image: url(../img/sub1_img/monitor_04.png);
+}
+
+.brand_cont_05 .itembox_blue .itembox_img05 {
+  background-image: url(../img/sub1_img/monitor_05.png);
+}
+
+.brand_cont_05 .itembox .itembox_img06 {
+  background-image: url(../img/sub1_img/monitor_06.png);
+}
+
+.brand_cont_05 .itembox .itembox_img07 {
+  background-image: url(../img/sub1_img/monitor_07.png);
+}
+
+.brand_cont_06 .itembox .itembox_img02 {
+  background-image: url(../img/sub1_img/laptop_02.png);
+}
+
+.brand_cont_06 .itembox_green .itembox_img03 {
+  background-image: url(../img/sub1_img/laptop_03.png);
+}
+
+.brand_cont_06 .itembox .itembox_img04 {
+  background-image: url(../img/sub1_img/laptop_04.png);
+}
+
+.brand_cont_06 .itembox_blue .itembox_img05 {
+  background-image: url(../img/sub1_img/laptop_05.png);
+}
+
+.brand_cont_06 .itembox .itembox_img06 {
+  background-image: url(../img/sub1_img/laptop_06.png);
+}
+
+.brand_cont_06 .itembox .itembox_img07 {
+  background-image: url(../img/sub1_img/laptop_07.png);
+}
+
+.brand_cont_07 .itembox .itembox_img02 {
+  background-image: url(../img/sub1_img/phone_02.png);
+}
+
+.brand_cont_07 .itembox_green .itembox_img03 {
+  background-image: url(../img/sub1_img/phone_03.png);
+}
+
+.brand_cont_07 .itembox .itembox_img04 {
+  background-image: url(../img/sub1_img/phone_04.png);
+}
+
+.brand_cont_07 .itembox_blue .itembox_img05 {
+  background-image: url(../img/sub1_img/phone_05.png);
+}
+
+.brand_cont_07 .itembox .itembox_img06 {
+  background-image: url(../img/sub1_img/phone_06.png);
+}
+
+.brand_cont_07 .itembox .itembox_img07 {
+  background-image: url(../img/sub1_img/phone_07.png);
+}
+
+.brand_cont_08 .itembox .itembox_img02 {
+  background-image: url(../img/sub1_img/tablet_02.png);
+}
+
+.brand_cont_08 .itembox_green .itembox_img03 {
+  background-image: url(../img/sub1_img/tablet_03.png);
+}
+
+.brand_cont_08 .itembox .itembox_img04 {
+  background-image: url(../img/sub1_img/tablet_04.png);
+}
+
+.brand_cont_08 .itembox_blue .itembox_img05 {
+  background-image: url(../img/sub1_img/tablet_05.png);
+}
+
+.brand_cont_08 .itembox .itembox_img06 {
+  background-image: url(../img/sub1_img/tablet_06.png);
+}
+
+.brand_cont_08 .itembox .itembox_img07 {
+  background-image: url(../img/sub1_img/tablet_07.png);
+}
+
+.brand_cont_09 .itembox .itembox_img02 {
+  background-image: url(../img/sub1_img/etc_02.png);
+}
+
+.brand_cont_09 .itembox_green .itembox_img03 {
+  background-image: url(../img/sub1_img/etc_03.png);
+}
+
+.brand_cont_09 .itembox .itembox_img04 {
+  background-image: url(../img/sub1_img/etc_04.png);
+}
+
+.brand_cont_09 .itembox_blue .itembox_img05 {
+  background-image: url(../img/sub1_img/etc_05.png);
+}
+
+.brand_cont_09 .itembox .itembox_img06 {
+  background-image: url(../img/sub1_img/etc_06.png);
+}
+
+.brand_cont_09 .itembox .itembox_img07 {
+  background-image: url(../img/sub1_img/etc_07.png);
+}
+
+.item_text {
+  text-align: center;
+}
+
+.item_text > p {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 10px;
+}
+.item_text > p:first-child {
+  display: flex;
+  flex-direction: column;
+}
+.item_text > p:last-child {
+  margin-bottom: 0;
+}
+.item_text > p > span {
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+}
+
+.item_text > p + p {
+  font-size: 18px;
+}
+
+.item_text > p:nth-child(4),
+.item_text > p:nth-child(5),
+.item_text > p:nth-child(6) {
+  margin-bottom: 0px;
+}
+
+/* product */
+#product {
+  height: 1186px;
+  background: #d6d9d4;
+}
+
+.product_area {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px;
+  box-sizing: border-box;
+}
+
+.product_area h2 {
+  /* 삼성 렌탈/리뉴 혜택 */
+  margin-top: 60px;
+  text-align: center;
+  font-size: 42px;
+  color: #000;
+  margin-bottom: 50px;
+}
+
+.product_area .nav {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.product_area .nav .line:after {
+  /* 라인 */
+  position: absolute;
+  left: 0%;
+  top: 40px;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0.9;
+}
+
+.product_area .nav .line_active {
+  /* 라인 */
+  position: absolute;
+  left: 0%;
+  top: 40px;
+  content: "";
+  width: 50%;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0.9;
+}
+
+.product_area .nav .line_active.on {
+  left: 50%;
+}
+
+.product_area .nav_area {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -20px;
+}
+
+.nav_area .left_nav ul li.on a {
+  color: #028c6a;
+  font-weight: 500;
+}
+
+.nav_area .right_nav ul li.on a {
+  color: #028c6a;
+  font-weight: 500;
+}
+
+.nav .title.on {
+  color: rgba(0, 0, 0, 1);
+  font-weight: 600;
+}
+
+.nav_area .left_nav > ul {
+  width: 480px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav_area .right_nav > ul {
+  width: 480px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav_area .left_nav > ul > li:last-child {
+  margin-right: 90px;
+}
+
+.nav_area .right_nav > ul > li:first-child {
+  margin-left: 90px;
+}
+
+.nav_area .left_nav > ul > li > a {
+  color: #000;
+}
+
+.nav_area .right_nav > ul > li > a {
+  color: #000;
+}
+
+.left_nav .title {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-right: 60px;
+}
+
+.right_nav .title {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-left: 60px;
+}
+
+.leftbox_area > ul > li > a {
+}
+
+.box_container .itembox {
+  width: 200px;
+  height: 230px;
+  border-radius: 15px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box_container .itembox_blue {
+  background: #c0dae9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box_container .itembox_dark {
+  background: #1e191d;
+  width: 200px;
+  height: 230px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box_container figure {
+  position: relative;
+  width: 140px;
+  height: 120px;
+  border-radius: 15px;
+  box-sizing: border-box;
+  background: no-repeat center/contain;
+}
+
+.box_container01 .itembox_blue .itembox_img01 {
+  background-image: url(../img/sub1_img/phone_01.png);
+}
+
+.box_container01 .itembox .itembox_img02 {
+  background-image: url(../img/sub1_img/earphone_01.png);
+}
+
+.box_container01 .itembox_dark .itembox_img03 {
+  background-image: url(../img/sub1_img/watch_01.png);
+}
+
+.box_container01 .itembox_img04 {
+  background-image: url(../img/sub1_img/headset_01.png);
+}
+
+.box_container01 .itembox_dark .itembox_img05 {
+  background-image: url(../img/sub1_img/camera_01.png);
+}
+
+.box_container01 .itembox .itembox_img06 {
+  background-image: url(../img/sub1_img/laptop_01.png);
+}
+
+.box_container01 .itembox .itembox_img07 {
+  background-image: url(../img/sub1_img/monitor_01.png);
+}
+
+.box_container01 .itembox_blue .itembox_img08 {
+  background-image: url(../img/sub1_img/tablet_01.png);
+}
+
+.box_container02 .itembox_blue .itembox_img01 {
+  background-image: url(../img/sub1_img/headset_02.png);
+}
+
+.box_container02 .itembox .itembox_img02 {
+  background-image: url(../img/sub1_img/camera_02.png);
+}
+
+.box_container02 .itembox_dark .itembox_img03 {
+  background-image: url(../img/sub1_img/earphone_02.png);
+}
+
+.box_container02 .itembox_img04 {
+  background-image: url(../img/sub1_img/watch_02.png);
+}
+
+.box_container02 .itembox_dark .itembox_img05 {
+  background-image: url(../img/sub1_img/etc_01.png);
+}
+
+.box_container02 .itembox .itembox_img06 {
+  background-image: url(../img/sub1_img/monitor_02.png);
+}
+
+.box_container02 .itembox .itembox_img07 {
+  background-image: url(../img/sub1_img/laptop_02.png);
+}
+
+.box_container02 .itembox_blue .itembox_img08 {
+  background-image: url(../img/sub1_img/phone_02.png);
+}
+
+.box_container03 .itembox_blue .itembox_img01 {
+  background-image: url(../img/sub1_img/earphone_03.png);
+}
+
+.box_container03 .itembox .itembox_img02 {
+  background-image: url(../img/sub1_img/etc_02.png);
+}
+
+.box_container03 .itembox_dark .itembox_img03 {
+  background-image: url(../img/sub1_img/camera_03.png);
+}
+
+.box_container03 .itembox_img04 {
+  background-image: url(../img/sub1_img/tablet_02.png);
+}
+
+.box_container03 .itembox_dark .itembox_img05 {
+  background-image: url(../img/sub1_img/watch_03.png);
+}
+
+.box_container03 .itembox .itembox_img06 {
+  background-image: url(../img/sub1_img/headset_03.png);
+}
+
+.box_container03 .itembox .itembox_img07 {
+  background-image: url(../img/sub1_img/laptop_03.png);
+}
+
+.box_container03 .itembox_blue .itembox_img08 {
+  background-image: url(../img/sub1_img/monitor_03.png);
+}
+
+.box_container04 .itembox_blue .itembox_img01 {
+  background-image: url(../img/sub1_img/etc_03.png);
+}
+
+.box_container04 .itembox .itembox_img02 {
+  background-image: url(../img/sub1_img/watch_04.png);
+}
+
+.box_container04 .itembox_dark .itembox_img03 {
+  background-image: url(../img/sub1_img/phone_03.png);
+}
+
+.box_container04 .itembox_img04 {
+  background-image: url(../img/sub1_img/camera_04.png);
+}
+
+.box_container04 .itembox_dark .itembox_img05 {
+  background-image: url(../img/sub1_img/earphone_05.png);
+}
+
+.box_container04 .itembox .itembox_img06 {
+  background-image: url(../img/sub1_img/earphone_04.png);
+}
+
+.box_container04 .itembox .itembox_img07 {
+  background-image: url(../img/sub1_img/headset_04.png);
+}
+
+.box_container04 .itembox_blue .itembox_img08 {
+  background-image: url(../img/sub1_img/tablet_03.png);
+}
+
+.box_container05 .itembox_blue .itembox_img01 {
+  background-image: url(../img/sub1_img/watch_05.png);
+}
+
+.box_container05 .itembox .itembox_img02 {
+  background-image: url(../img/sub1_img/phone_04.png);
+}
+
+.box_container05 .itembox_dark .itembox_img03 {
+  background-image: url(../img/sub1_img/etc_04.png);
+}
+
+.box_container05 .itembox_img04 {
+  background-image: url(../img/sub1_img/tablet_04.png);
+}
+
+.box_container05 .itembox_dark .itembox_img05 {
+  background-image: url(../img/sub1_img/camera_05.png);
+}
+
+.box_container05 .itembox .itembox_img06 {
+  background-image: url(../img/sub1_img/laptop_04.png);
+}
+
+.box_container05 .itembox .itembox_img07 {
+  background-image: url(../img/sub1_img/watch_06.png);
+}
+
+.box_container05 .itembox_blue .itembox_img08 {
+  background-image: url(../img/sub1_img/monitor_04.png);
+}
+
+.box_container06 .itembox_blue .itembox_img01 {
+  background-image: url(../img/sub1_img/monitor_05.png);
+}
+
+.box_container06 .itembox .itembox_img02 {
+  background-image: url(../img/sub1_img/laptop_05.png);
+}
+
+.box_container06 .itembox_dark .itembox_img03 {
+  background-image: url(../img/sub1_img/headset_05.png);
+}
+
+.box_container06 .itembox_img04 {
+  background-image: url(../img/sub1_img/phone_05.png);
+}
+
+.box_container06 .itembox_dark .itembox_img05 {
+  background-image: url(../img/sub1_img/etc_05.png);
+}
+
+.box_container06 .itembox .itembox_img06 {
+  background-image: url(../img/sub1_img/camera_06.png);
+}
+
+.box_container06 .itembox .itembox_img07 {
+  background-image: url(../img/sub1_img/tablet_05.png);
+}
+
+.box_container06 .itembox_blue .itembox_img08 {
+  background-image: url(../img/sub1_img/earphone_06.png);
+}
+
+.box_container07 .itembox_blue .itembox_img01 {
+  background-image: url(../img/sub1_img/monitor_06.png);
+}
+
+.box_container07 .itembox .itembox_img02 {
+  background-image: url(../img/sub1_img/headset_06.png);
+}
+
+.box_container07 .itembox_dark .itembox_img03 {
+  background-image: url(../img/sub1_img/phone_06.png);
+}
+
+.box_container07 .itembox_img04 {
+  background-image: url(../img/sub1_img/laptop_06.png);
+}
+
+.box_container07 .itembox_dark .itembox_img05 {
+  background-image: url(../img/sub1_img/etc_06.png);
+}
+
+.box_container07 .itembox .itembox_img06 {
+  background-image: url(../img/sub1_img/watch_07.png);
+}
+
+.box_container07 .itembox .itembox_img07 {
+  background-image: url(../img/sub1_img/camera_07.png);
+}
+
+.box_container07 .itembox_blue .itembox_img08 {
+  background-image: url(../img/sub1_img/tablet_06.png);
+}
+
+.box_container08 .itembox_blue .itembox_img01 {
+  background-image: url(../img/sub1_img/monitor_07.png);
+}
+
+.box_container08 .itembox .itembox_img02 {
+  background-image: url(../img/sub1_img/headset_07.png);
+}
+
+.box_container08 .itembox_dark .itembox_img03 {
+  background-image: url(../img/sub1_img/earphone_07.png);
+}
+
+.box_container08 .itembox_img04 {
+  background-image: url(../img/sub1_img/laptop_07.png);
+}
+
+.box_container08 .itembox_dark .itembox_img05 {
+  background-image: url(../img/sub1_img/phone_08.png);
+}
+
+.box_container08 .itembox .itembox_img06 {
+  background-image: url(../img/sub1_img/tablet_07.png);
+}
+
+.box_container08 .itembox .itembox_img07 {
+  background-image: url(../img/sub1_img/etc_07.png);
+}
+
+.box_container08 .itembox_blue .itembox_img08 {
+  background-image: url(../img/sub1_img/phone_07.png);
+}
+
+/* box_container */
+.leftbox_area > ul {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.rightbox_area > ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item_text p {
+  line-height: 0.8;
+}
+.item_text p:nth-child(2) {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  justify-content: center;
+}
+.item_text p:last-child {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.item_text p > .regular_price {
+  font-size: 17px;
+  letter-spacing: normal;
+  color: #000;
+  opacity: 0.4;
+  text-decoration: line-through;
+  margin-right: 5px;
+  margin-bottom: 0;
+}
+
+.item_text .sale {
+  margin-bottom: 0;
+  color: red;
+  font-weight: 400;
+}
+
+.item_text .price {
+  color: #000;
+  font-weight: 600;
+}
+
+.box_container {
+  display: none;
+}
+
+.box_container.on {
+  display: block;
+}
+
+/* footer */
+footer {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+footer > .inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+  color: #fff;
+}
+
+.logo_sns .logo {
+  margin-bottom: 20px;
+}
+
+.logo_sns .logo img {
+  width: 230px;
+  height: 50px;
+}
+
+.logo_sns .sns {
+  display: flex;
+  justify-content: space-between;
+  width: 170px;
+  padding: 0 30px;
+}
+
+.logo_sns .sns img {
+  width: 35px;
+  height: 35px;
+}
+
+.menu_info .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 360px;
+}
+
+.menu_info .menu li:last-child {
+  margin-right: 0;
+}
+
+.menu_info .info {
+  line-height: 1.5;
+}
+
+.menu_info .info span::after {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 13px;
+  background: #fff;
+  margin: 0 3px;
+}
+
+.service {
+  text-align: center;
+}
+
+.service span {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  display: block;
+}
+
+.service p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* section05 popup */
+.popup-base {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+  display: none;
+}
+
+.popup-base .pop-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 360px;
+  height: 360px;
+  background: #fff;
+}
+
+.popup-base .pop-content .btn-xpop {
+  position: absolute;
+  right: 0;
+  top: -55px;
+}
+
+.popup-base .pop-content .btn-xpop a {
+  display: block;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  overflow: hidden;
+  background: url(../img/btn_xpop.png) no-repeat;
+  background-size: 45px;
+  text-indent: -99999px;
+}
+
+.popup-base .pop-content .pop-list {
+  text-align: center;
+  height: 100%;
+}
+
+/* .popup-base .pop-content .pop-list img {
+  max-width: 100%;
+  height: 600px; 원래없던것 추가한것 
+} */
+.popup-base .pop-list > li {
+  position: relative;
+  height: 100%;
+}
+
+.pop_text_box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #028c6a;
+}
+
+/* 텍스트추가 css바꾸기 */
+.pop_text_box .title {
+  font-size: 64px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.pop_text_box .text {
+  font-size: 24px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 50px;
+}
+
+.popup-base .pop_text_box {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.pop_text_box .B_text {
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 40px;
+}
+
+.pop_text_box .M_text {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  margin-top: 25px;
+}
+
+.pop_text_box .S_text {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
+  margin-top: 35px;
+}
+
+.pop_text_box img {
+  width: 55px;
+  height: 55px;
+}
+
+/* footer */
+footer {
+  background: rgba(0, 0, 0, 0.3);
+}
+footer > .inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+  color: #fff;
+}
+.logo_sns .logo {
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.logo_sns .logo img {
+  width: 200px;
+  height: 70px;
+}
+.logo_sns .sns {
+  display: flex;
+  justify-content: space-between;
+  width: 170px;
+  padding: 0 30px;
+}
+.logo_sns .sns img {
+  width: 35px;
+  height: 35px;
+}
+.menu_info .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 360px;
+}
+
+.menu_info .menu li:last-child {
+  margin-right: 0;
+}
+
+.menu_info .info {
+  line-height: 1.5;
+}
+.menu_info .info span::after {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 13px;
+  background: #fff;
+  margin: 0 3px;
+}
+.service {
+  text-align: center;
+}
+.service span {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  display: block;
+}
+
+.service p {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
