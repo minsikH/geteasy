@@ -18,6 +18,10 @@ window.onresize = function () {
 
 /* sub3_main_swiper */
 let sub3MainSwiper = new Swiper(".sub3_main_swiper", {
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
   loop: true,
   pagination: {
     el: ".swiper-pagination",
