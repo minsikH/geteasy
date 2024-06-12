@@ -3,10 +3,10 @@ function loadResponsivePage() {
   let width = window.innerWidth;
   let currentUrl = window.location.href;
 
-  if (width <= 480 && !currentUrl.includes("mypageLogin_m.html")) {
-    window.location.href = "mypageLogin_m.html";
-  } else if (width > 480 && !currentUrl.includes("mypageLogin.html")) {
-    window.location.href = "mypageLogin.html";
+  if (width <= 480 && !currentUrl.includes("mypagelogin_m.html")) {
+    window.location.href = "mypagelogin_m.html";
+  } else if (width > 480 && !currentUrl.includes("mypagelogin.html")) {
+    window.location.href = "mypagelogin.html";
   }
 }
 // 페이지 로드 시 실행

@@ -3,9 +3,9 @@ function loadResponsivePage() {
   let width = window.innerWidth;
   let currentUrl = window.location.href;
 
-  if (width <= 480 && !currentUrl.includes("mypageJoin_m.html")) {
+  if (width <= 480 && !currentUrl.includes("mypagejoin_m.html")) {
     window.location.href = "mypagejoin_m.html";
-  } else if (width > 480 && !currentUrl.includes("mypageJoin.html")) {
+  } else if (width > 480 && !currentUrl.includes("mypagejoin.html")) {
     window.location.href = "mypagejoin.html";
   }
 }
