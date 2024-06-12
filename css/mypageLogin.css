@@ -155,10 +155,11 @@ form button {
   border: none;
   background: transparent;
 }
-button img {
+.search_area form button {
   position: relative;
   top: -33px;
   left: 95px;
+  cursor: pointer;
 }
 
 /* gnb_sub */
@@ -304,6 +305,7 @@ button img {
 
 .user_area .login {
   margin-bottom: 20px;
+  cursor: pointer;
 }
 .user_area .join {
   display: block;
@@ -318,6 +320,7 @@ button img {
   text-align: center;
 }
 .user_area .google {
+  cursor: pointer;
 }
 
 /* footer */

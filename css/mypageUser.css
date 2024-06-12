@@ -160,10 +160,11 @@ form button {
   border: none;
   background: transparent;
 }
-button img {
+.search_area form button {
   position: relative;
   top: -33px;
   left: 95px;
+  cursor: pointer;
 }
 
 /* gnb_sub */
@@ -464,6 +465,7 @@ button img {
 .cs_area .inner > div:last-child > span {
   text-decoration: underline;
   text-decoration-thickness: 0.1px; /* 밑줄 두께 조절 */
+  cursor: pointer;
 }
 
 /* footer */

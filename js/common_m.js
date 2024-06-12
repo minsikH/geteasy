@@ -12,7 +12,7 @@ $(document).ready(function () {
 
 /* 사용자 로그인 상태 확인 후 페이지 이동 함수 */
 function checkUserAndRedirect() {
-  var user = localStorage.getItem("user");
+  let user = localStorage.getItem("user");
   if (user) {
     // 사용자가 로그인된 경우
     window.location.href = "mypageUser_m.html"; // 유저페이지로 이동
@@ -41,7 +41,7 @@ $("#login").on("click", function () {
 });
 
 //구글 인증 기능
-var provider = new firebase.auth.GoogleAuthProvider();
+let provider = new firebase.auth.GoogleAuthProvider();
 
 //구글 인증하기
 $("#loginGoogle").on("click", function () {
@@ -49,8 +49,8 @@ $("#loginGoogle").on("click", function () {
     .auth()
     .signInWithPopup(provider)
     .then(function (result) {
-      //var token = result.credential.accessToken;
-      var user = result.user;
+      //let token = result.credential.accessToken;
+      let user = result.user;
       localStorage.setItem("user", JSON.stringify(user));
       window.location.href = "index_m.html";
     })

@@ -80,7 +80,7 @@ $("#send").on("click", function () {
           .then((result) => {
             //성공 후에 실행할 코드
             alert("후기를 저장했습니다.");
-            window.location.href = "sub4.html";
+            window.location.href = "detail.html";
           })
           .catch((err) => {
             //실패 후에 실행할 코드

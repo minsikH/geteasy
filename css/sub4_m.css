@@ -948,12 +948,12 @@
   }
   .bot_area .item > span {
     display: inline-block;
-    padding: 5px 10px;
-    font-size: 14px;
+    padding: 5px 8px;
+    font-size: 13px;
     color: #000;
     background: rgba(0, 0, 0, 0.1);
     border-radius: 4px;
-    margin-right: 10px;
+    margin-right: 8px;
   }
 
   .score {
@@ -969,6 +969,10 @@
     left: 0;
     background: transparent;
     z-index: 2;
+  }
+  .score .score_num {
+    width: 27px;
+    text-align: center;
   }
   .rate {
     display: inline-block;

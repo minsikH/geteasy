@@ -1056,7 +1056,7 @@
   .menu_bar > li > a > p {
     font-size: 13px;
   }
-  .menu_bar > li:nth-child(1) > a > p {
+  .menu_bar > li:nth-child(2) > a > p {
     color: #028c6a;
     font-weight: 500;
   }

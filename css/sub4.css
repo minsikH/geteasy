@@ -155,10 +155,11 @@ form button {
   border: none;
   background: transparent;
 }
-button img {
+.search_area form button {
   position: relative;
   top: -33px;
   left: 95px;
+  cursor: pointer;
 }
 
 /* gnb_sub */

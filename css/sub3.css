@@ -157,12 +157,12 @@ form button {
   border: none;
   background: transparent;
 }
-button img {
+.search_area form button {
   position: relative;
   top: -33px;
   left: 95px;
+  cursor: pointer;
 }
-
 /* gnb_sub */
 .gnb_sub {
   border-top: 1px solid rgba(0, 0, 0, 0.2);
@@ -233,7 +233,7 @@ button img {
   position: absolute;
   top: 50%;
   right: 5%;
-  transform: translate(-50%, -50%);
+  transform: translate(50%, -50%);
   color: rgba(0, 0, 0, 0.8);
   z-index: 2;
 }
@@ -325,7 +325,7 @@ button img {
 }
 .sub3_wrap .mainText_area {
   position: absolute;
-  left: 0;
+  left: 10%;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -366,7 +366,7 @@ aside {
   height: 360px;
   border-radius: 4px;
   position: absolute;
-  top: 740px;
+  top: 840px;
   left: 20px;
   z-index: 10;
   border: 1px solid rgba(0, 0, 0, 0.2);

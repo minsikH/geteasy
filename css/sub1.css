@@ -160,10 +160,11 @@ form button {
   border: none;
   background: transparent;
 }
-button img {
+.search_area form button {
   position: relative;
   top: -33px;
   left: 95px;
+  cursor: pointer;
 }
 
 /* gnb_sub */
@@ -224,7 +225,7 @@ button img {
 .sub1_main_swiper .swiper-slide .text_area {
   position: absolute;
   top: 40%;
-  left: 0;
+  left: 6%;
 }
 
 .sub1_main_swiper .swiper-slide .text_area p {

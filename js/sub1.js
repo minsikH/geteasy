@@ -48,10 +48,10 @@ let sub_swiper = new Swiper(".sub1_main_swiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  /* autoplay: {
-    delay: 3000, 
-    disableOnInteraction: false, 
-    }, */
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
   slidesPerGroup: 1,
 });
 

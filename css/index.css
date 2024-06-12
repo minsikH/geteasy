@@ -168,10 +168,11 @@ form button {
   border: none;
   background: transparent;
 }
-button img {
+.search_area form button {
   position: relative;
   top: -33px;
   left: 95px;
+  cursor: pointer;
 }
 
 /* gnb_sub */
@@ -230,7 +231,8 @@ button img {
   font-weight: bolder;
   position: absolute;
   top: 37%;
-  left: 18%;
+  left: 10%;
+  line-height: 1.5;
 }
 
 .main_swiper .swiper-slide01 button {
@@ -262,7 +264,7 @@ button img {
 .main_swiper .swiper-slide02 .dyson {
   position: absolute;
   top: 20%;
-  left: 20%;
+  left: 10%;
 }
 
 .main_swiper .swiper-slide02 .main_text02 {
@@ -270,7 +272,7 @@ button img {
   font-weight: bolder;
   position: absolute;
   top: 45%;
-  left: 20%;
+  left: 10%;
 }
 
 .main_swiper .swiper-slide02 .main_text02 > span {
@@ -305,7 +307,7 @@ button img {
   font-weight: bolder;
   position: absolute;
   top: 30%;
-  left: 20%;
+  left: 10%;
 }
 
 .main_swiper .swiper-slide03 .main_text03 > span {

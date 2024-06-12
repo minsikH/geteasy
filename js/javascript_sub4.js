@@ -492,7 +492,7 @@ db.collection("review")
         let currentUserUid = currentUser ? currentUser.uid : null;
 
         // 현재 클릭된 리뷰의 UID 가져오기
-        let reviewContent = $(this).closest(".top_area").parent();
+        let reviewContent = $(this).closest(".right_area").parent();
         let reviewUid = reviewContent.attr("id");
 
         if (currentUserUid === reviewUid) {
